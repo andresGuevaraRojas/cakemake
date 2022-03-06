@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <title>CakeMake</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/CakeMakeLogo.png" alt="CakeMake logo" class="header__logo">
+        <p class="header__title">CakeMake</p>
+        <ul class="header__menu">
+            <li class="header__menu__item"><a href="#inicio">Inicio</a></li>            
+            <li class="header__menu__item"><a href="#login">Iniciar sesión</a></li>
+            <li class="header__menu__item"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+    <section class="hero" id="inicio">       
+        <div class="hero__content">
+            <h1 class="hero__title">Crea el pastel de tus sueños</h1>
+            <p>Tenemos a tu disposición una gran variedad de sabores y decoraciones para hacer de tu pastel único</p>
+            <a class="hero__content_button" href="#crearpastel">Crear mi pastel</a>
+        </div>
+        <img class="hero__image" src="./images/ChocolateCake.jpg" alt="Pastel chocolate">
+    </section>
+    <section class="flavors">
+        <h2 class="flavors__title">Sabores</h2>
+        <div class="flavors__content">
+            <div class="flavors__content__item">
+                <img src="./images/fresa.jpg">
+                <div>
+                    <p>Fresa</p>
+                    <span>$100.00</span>
+                </div>                
+            </div>
+            <div class="flavors__content__item">
+                <img src="./images/chocolate.jpg">
+                <div>
+                    <p>Chocolate</p>
+                    <span>$200.00</span>
+                </div>                
+            </div>
+            <div class="flavors__content__item">
+                <img src="./images/vainilla.jpg">
+                <div>
+                    <p>Vainilla</p>
+                    <span>$100.00</span>
+                </div>                
+            </div>            
+        </div>        
+    </section>
+    <section class="ornament">
+        <h2 class="ornament__title">Decoraciones</h2>
+        <div class="ornament__content">
+            <div class="ornament__content__item">
+                <img src="./images/letrero.jpg">
+                <div>
+                    <p>Letrero</p>
+                    <span>$20.00</span>
+                </div>                
+            </div>
+            <div class="ornament__content__item">
+                <img src="./images/merengue.jpg">
+                <div>
+                    <p>Merengue</p>
+                    <span>$50.00</span>
+                </div>                
+            </div>
+            <div class="ornament__content__item">
+                <img src="./images/dulce.jpg">
+                <div>
+                    <p>Dulce</p>
+                    <span>$60.00</span>
+                </div>                
+            </div> 
+            <div class="ornament__content__item">
+                <img src="./images/frutas.jpg">
+                <div>
+                    <p>Frutas</p>
+                    <span>$80.00</span>
+                </div>                
+            </div>            
+        </div>        
+    </section>
+
+    <section class="pedido">
+        <h1 class="pedido__title" id="crearpastel">Crear mi pastel</h1>
+
+        <form class="pedido__form">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <div class="pedido__form__inputGroup">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>    
+                <div class="pedido__form__inputGroup">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono">
+                </div>
+                <div class="pedido__form__inputGroup">
+                    <label>Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                </div>                            
+            </fieldset>
+            <fieldset>
+                <legend>Especificaciones del pastel</legend>
+                <div class="pedido__form__inputGroup">
+                    <label>Descripción general</label>
+                    <input type="text" name="Descripcion" id="descripcion">
+                </div>   
+                <div class="pedido__form__checkBoxGroup">
+                    <p>Selecciona tu sabores favoritos</p>
+                    
+                    <input type="checkbox" name="sabores" id="fresa" value="Fresa">
+                    <label for="fresa">Fresa</label>  
+
+                    <input type="checkbox" name="sabores" id="chocolate" value="Chocolate">
+                    <label for="chocolate">Chocolate</label>    
+                    
+                    <input type="checkbox" name="sabores" id="vainilla" value="Vainilla">
+                    <label for="vainilla">Vainilla</label>                                                                           
+                </div>  
+                <div class="pedido__form__checkBoxGroup">
+                    <p>Selecciona las decoraciones para tu pastel</p>
+
+                    <input type="checkbox" name="decoraciones" id="letrero" value="Letrero">
+                    <label for="letrero">Letrero</label> 
+
+                    <input type="checkbox" name="decoraciones" id="merengue" value="Merengue">
+                    <label for="merengue">Merengue</label> 
+
+                    <input type="checkbox" name="decoraciones" id="dulce" value="Dulce">
+                    <label for="dulce">Dulce</label> 
+
+                    <input type="checkbox" name="decoraciones" id="frutas" value="Frutas">
+                    <label for="frutas">Frutas</label> 
+                </div>  
+            </fieldset>
+            <button type="submit">Ordenar</button>
+        </form>
+        
+    </section>
+    <footer class="contacto" id="contacto">
+        <p>CakeMake SA de CV</p>
+        <p>Av del paseo de la palma #7832L, Acapulco, Gro.</p>
+        <p> Horarios de atención: Lunes-Viernes de 7:00 am a 8:00 pm. Sabados y Domingos de 9:00 am a 4:00 pm</p> 
+        <p> Teléfono: <a href="tel:+528353259359949594">+528353259359949594</a></p>               
+    </footer>
+
+</body>
+</html> 
