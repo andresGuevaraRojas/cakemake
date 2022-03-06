@@ -6,4 +6,5 @@ En el sitio los clientes podrán ver los diferentes sabores que la pastelería p
 
 El pastelero tendrá una sección especial en el que verá el invetario de sabores y decoraciones disponibles, además podrá ver los pedidos realizados por los clientes.
 
+[Visitar CakeMake](https://andresguevararojas.github.io/cakemake/)
 ![Captura de pantalla de CakeMake](./ScreenShotCakeMake.jpeg)
