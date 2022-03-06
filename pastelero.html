@@ -17,67 +17,130 @@
         <ul class="header__menu">
             <li class="header__menu__item"><a href="#inicio">Inicio</a></li>            
             <li class="header__menu__item"><a href="./pastelero.html">Andrew</a></li>
+            <li class="header__menu__item"><a href="#pedidos">Pedidos</a></li>
             <li class="header__menu__item"><a href="./index.html">Cerrar sesión</a></li>
         </ul>
     </header>    
     <section class="flavors">
-        <h2 class="flavors__title">Sabores</h2>
+        <h2 class="flavors__title">Inventario de sabores</h2> 
         <div class="flavors__content">
-            <div class="flavors__content__item">
+            <div class="flavors__content__item pastelero">
                 <img src="./images/fresa.jpg">
                 <div>
                     <p>Fresa</p>
                     <span>$100.00</span>
+                    <p class="unidadesDisponibles_good">Unidades disponibles: <span>30</span></p>
                 </div>                
             </div>
-            <div class="flavors__content__item">
+            <div class="flavors__content__item pastelero">
                 <img src="./images/chocolate.jpg">
                 <div>
                     <p>Chocolate</p>
                     <span>$200.00</span>
+                    <p class="unidadesDisponibles_danger">Unidades disponibles: <span>5</span></p>
                 </div>                
             </div>
-            <div class="flavors__content__item">
+            <div class="flavors__content__item pastelero">
                 <img src="./images/vainilla.jpg">
                 <div>
                     <p>Vainilla</p>
                     <span>$100.00</span>
+                    <p class="unidadesDisponibles_alert">Unidades disponibles: <span>10</span></p>
                 </div>                
             </div>            
         </div>        
     </section>
     <section class="ornament">
-        <h2 class="ornament__title">Decoraciones</h2>
+        <h2 class="ornament__title">Inverntario de decoraciones</h2>
         <div class="ornament__content">
-            <div class="ornament__content__item">
+            <div class="ornament__content__item pastelero">
                 <img src="./images/letrero.jpg">
                 <div>
                     <p>Letrero</p>
                     <span>$20.00</span>
+                    <p class="unidadesDisponibles_good">Unidades disponibles: <span>25</span></p>
                 </div>                
             </div>
-            <div class="ornament__content__item">
+            <div class="ornament__content__item pastelero">
                 <img src="./images/merengue.jpg">
                 <div>
                     <p>Merengue</p>
                     <span>$50.00</span>
+                    <p class="unidadesDisponibles_good">Unidades disponibles: <span>32</span></p>
                 </div>                
             </div>
-            <div class="ornament__content__item">
+            <div class="ornament__content__item pastelero">
                 <img src="./images/dulce.jpg">
                 <div>
                     <p>Dulce</p>
                     <span>$60.00</span>
+                    <p class="unidadesDisponibles_danger">Unidades disponibles: <span>6</span></p>
                 </div>                
             </div> 
-            <div class="ornament__content__item">
+            <div class="ornament__content__item pastelero">
                 <img src="./images/frutas.jpg">
                 <div>
                     <p>Frutas</p>
                     <span>$80.00</span>
+                    <p class="unidadesDisponibles_danger">Unidades disponibles: <span>4</span></p>
                 </div>                
             </div>            
         </div>        
+    </section>
+
+    <section class="pedidosClientes" id="pedidos">
+        <h2 class="pedidosClientes__title">Pedidos</h2> 
+        <div class="pedidosClientes__content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo electrónico</th>
+                        <th>Sabores</th>
+                        <th>Decoraciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>José R</td>
+                        <td>+524444</td>
+                        <td>joser@fakemail.com</td>                      
+                        <td>
+                            <span>Chocolate</span>
+                            <span>Vainilla</span>
+                        </td>
+                        <td>Letrero</td>
+                    </tr>
+                    <tr>
+                        <td>Teresa F</td>
+                        <td>+554656432</td>
+                        <td>teresa_f3344@fakemail.com</td>                      
+                        <td>
+                            <span>Fresa</span>
+                            <span>Vainilla</span>
+                        </td>
+                        <td>
+                            <span>Merengue</span>
+                            <span>Frutas</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jimena N</td>
+                        <td>+5245454366</td>
+                        <td>jimenan_1990@fakemail.com</td>                      
+                        <td>
+                            Chocolate
+                        </td>
+                        <td>                            
+                            <span>Merengue</span>
+                            <span>Letrero</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
     </section>
 
     <footer class="contacto" id="contacto">

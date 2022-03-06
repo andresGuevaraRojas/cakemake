@@ -207,3 +207,64 @@ input{
     text-decoration: none;
     color: white;
 }
+.unidadesDisponibles_good{
+    background-color: green;
+    color: white;
+    padding: 0.2em;
+}
+.unidadesDisponibles_alert{
+    background-color: yellow;
+    color: black;
+    padding: 0.2em;
+}
+.unidadesDisponibles_danger{
+    background-color: red;
+    color: white;
+    padding: 0.2em;
+}
+
+.flavors__content__item.pastelero{
+    min-width: 120px;
+    max-width: 220px;
+}
+.ornament__content__item.pastelero{
+    min-width: 120px;
+    max-width: 220px;
+}
+
+.pedidosClientes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pedidosClientes__title{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;    
+    font-size: 1.8em;
+}
+
+.pedidosClientes__content{
+    width: 100%;   
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    padding: 1em;
+}
+.pedidosClientes__content table{
+    border-collapse: collapse;
+}
+.pedidosClientes__content thead{
+    background-color: #8469BF;
+}
+.pedidosClientes__content thead th{
+    padding: 1em;    
+    color: white;
+}
+.pedidosClientes__content tbody{
+    border: 1px solid black;
+}
+.pedidosClientes__content tbody td{
+    border: 1px solid black;
+    padding: 1em; 
+}
